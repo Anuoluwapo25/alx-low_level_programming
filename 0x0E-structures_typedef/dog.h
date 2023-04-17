@@ -1,6 +1,25 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * struct dog - main finction
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of the dog
+ *
+ * Description: the atribute of a particular dog
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+/**
+ * dog_t - Typedef(alliance)
+ */
+
 typedef struct dog 
 {
 	char *name;
