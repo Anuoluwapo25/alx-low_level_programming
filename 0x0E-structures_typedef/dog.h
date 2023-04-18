@@ -6,21 +6,16 @@
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of the dog
+ * dog_t: aliance
  *
  * Description: the atribute of a particular dog
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-
-/**
- * dog_t - Typedef(alliance)
- */
-
-typedef struct dog dog_t;
+} dog_t;
 
 void free_dog(dog_t *d);
 dog_t *new_dog(char *name, float age, char *owner);
