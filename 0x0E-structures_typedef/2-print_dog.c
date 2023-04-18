@@ -2,11 +2,11 @@
 #include "dog.h"
 
 /**
- * print_dog - function that print struct
+ * print_dog - print all the data of a dog
  *
  * @d: structure variable
  *
- * Return: 0
+ * Return: Nothing
  */
 
 void print_dog(struct dog *d)
