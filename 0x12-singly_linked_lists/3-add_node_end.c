@@ -1,8 +1,9 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
+
 /**
- * *add_node_end - end to end of node
+ * add_node_end - end to end of node
  * @head: head of node
  * @str: strin
  * Return: adress
