@@ -19,8 +19,7 @@ int is_prime_number(int n)
  * is_prime_helper - function for prime number
  * @n: the number
  * @div:  divisor to test
- *
- * Return: 1 if prime, 0 
+ * Return: 0 and 1
  */
 
 int is_prime_helper(int n, int div)
