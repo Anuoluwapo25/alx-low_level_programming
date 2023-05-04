@@ -14,20 +14,27 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0;
-	int len;
-	int base = 1;
+	int len = 1;
 	int i;
+	char d;
+	int l;
 
-	len = strlen(b);
-	for (i = (len - 1); i >= 0; i--)
+	l = strlen(b);
+	if (b == NULL)
+		return (0);
+	for (i = (l - 1); *b >= 0 ; i--)
 	{
-		if (!isdigit(b) || b == NULL)
-		       return (0);
-		else if (b[i] == '1')
+		d = b[i];
+		if (d != '0' || d != '1')
+			return (0);
+		if (d == '1')
 		{
-			dec += base;
-			base *= 2;
+			dec = dec + len;
 		}
+		else
+
+	len <<= 1;
 	}
+
 	return (dec);
 }
