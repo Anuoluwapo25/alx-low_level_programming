@@ -16,16 +16,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (endnode == NULL)
 		return (NULL);
 	endnode->n = n;
-	if (endnode->n == 0)
-	{
-		free(endnode);
-		return (NULL);
-	}
 	endnode->next = NULL;
 	if (*head == NULL)
-	{
 		*head = endnode;
-	}
 	else
 	{
 		temp = *head;
