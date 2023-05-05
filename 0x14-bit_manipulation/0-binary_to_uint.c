@@ -14,26 +14,24 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int dec = 0;
-	int len = 1;
 	int i;
 	char d;
-	int l;
 
-	l = strlen(b);
 	if (b == NULL)
 		return (0);
-	for (i = (l - 1); *b >= 0 ; i--)
+	i = 0;
+	for (; b[i]; i++)
 	{
 		d = b[i];
 		if (d != '0' || d != '1')
 			return (0);
 		if (d == '1')
 		{
-			dec = dec + len;
+			dec <<= 1;
+			dec = dec + 1;
 		}
 		else
-
-	len <<= 1;
+			dec <<= 1;
 	}
 
 	return (dec);
