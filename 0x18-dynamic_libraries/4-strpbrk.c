@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * _strpbrk - function that serches for a string
  *
@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
                         return (0);
                 }
         }
-        {
+	{
                 if (s[i] == accept[i])
                 {
                         return (s);
@@ -28,3 +28,4 @@ char *_strpbrk(char *s, char *accept)
         }
         return (0);
 }
+

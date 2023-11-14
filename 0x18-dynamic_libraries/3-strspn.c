@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * _strspn - function that finds the matching length of two string
  *
@@ -22,7 +22,7 @@ unsigned int _strspn(char *s, char *accept)
         while (len2 != '\0')
                 len2++;
 
-        for (i = 0; i < len1; i++)
+	        for (i = 0; i < len1; i++)
         {
                 for (j = 0; j < len2; j++)
                 {

@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * _strcmp - finctions that compares
  * @s1: par s1
@@ -21,3 +21,4 @@ int _strcmp(char *s1, char *s2)
         }
         return (op);
 }
+

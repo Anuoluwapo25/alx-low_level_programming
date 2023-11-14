@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * _puts - function that prints spring
  *
@@ -16,3 +16,4 @@ void _puts(char *str)
         }
         _putchar('\n');
 }
+

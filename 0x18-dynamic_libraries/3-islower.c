@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * islower - function that prints lower case
  *
@@ -16,3 +16,4 @@ int _islower(int c)
         else
                 return (0);
 }
+

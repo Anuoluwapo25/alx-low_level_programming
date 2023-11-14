@@ -1,13 +1,15 @@
 #include "main.h"
+#include <string.h>
+#include <stdio.h>  // Add this line for printf
+#include <stdlib.h> // Add this line for EXIT_SUCCESS
 
 /**
- * _strlen - function that find's the length of string
+ * _strlen - function that finds the length of a string
  *
- * @s: par s
+ * @s: input string
  *
- * Return: the length of string
+ * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
         int len = 0;

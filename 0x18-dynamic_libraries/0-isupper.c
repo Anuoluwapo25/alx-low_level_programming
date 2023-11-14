@@ -1,5 +1,5 @@
 #include "main.h"
-
+  
 /**
  * _isupper - function that prints uppercase
  *
@@ -15,3 +15,4 @@ int _isupper(int c)
         else
                 return (0);
 }
+
