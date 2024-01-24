@@ -3,7 +3,5 @@ SRC=$(wildcard *.c)
 OBJ=$(SRC:.c=.o)
 NAME=school
 
-all: main.o school.o m.h
-	gcc main.o school.o -o school
-clean:
-	rm -f $(OBJ) $(NAME)
+all: $(OBJ) m.h
+	$(CC)  $(OBJ) -o $(NAME)
