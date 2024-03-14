@@ -8,7 +8,7 @@
   * @value: The value to search for.
   * Return: If the value is not present, -1.
   */
-int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
+int advanced_b_rc(int *array, size_t left, size_t right, int value)
 {
 	size_t mid;
 
@@ -24,8 +24,8 @@ int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 	if (array[mid] == value && (mid == left || array[mid - 1] != value))
 		return (mid);
 	if (array[mid] >= value)
-		return (advanced_binary_recursive(array, left, mid, value));
-	return (advanced_binary_recursive(array, mid + 1, right, value));
+		return (advanced_b_rc(array, left, mid, value));
+	return (advanced_b_rc(array, mid + 1, right, value));
 }
 
 /**
@@ -40,5 +40,5 @@ int advanced_binary(int *array, size_t size, int value)
 	if (array == NULL || size == 0)
 		return (-1);
 
-	return (advanced_binary_recursive(array, 0, size - 1, value));
+	return (advanced_b_rc(array, 0, size - 1, value));
 }
